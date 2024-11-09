@@ -1,0 +1,14 @@
+{
+  "name": "stationwise-playwright-typescript-e2e-tetsts",
+  "version": "1.0.0",
+  "description": "This project contains e2e tests for Stationwise demo.",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.48.2",
+    "@types/node": "^22.9.0"
+  }
+}
