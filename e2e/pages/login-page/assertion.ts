@@ -1,5 +1,4 @@
 import { Page, TestInfo, expect } from "@playwright/test";
-
 import { CoreAssertion } from "../../../src/assertion/CoreAssertion";
 import { LoginLocator } from "./locator";
 
