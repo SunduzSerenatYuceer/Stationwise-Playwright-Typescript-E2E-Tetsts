@@ -35,9 +35,6 @@ export class PersonalCalendarLocator extends CoreLocator {
     private _success_requestShiftTrade = this.page.getByText('Your shift trade request has');
     private _goBackToCalendarButton = this.page.getByRole('button', { name: 'Go back to calendar' });
 
-
-    
-
     // Admin Role Locators
 
     private _personalDashboard_topBar_Admin = this.page.getByLabel('Personal Dashboard');
@@ -158,10 +155,5 @@ export class PersonalCalendarLocator extends CoreLocator {
     public get backToCalendar() {
         return this._goBackToCalendarButton;
     }
-
-
-
-
-
 
 }

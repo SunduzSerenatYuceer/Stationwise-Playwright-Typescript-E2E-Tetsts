@@ -1,7 +1,6 @@
 import { Page, TestInfo } from "@playwright/test";
 import { CoreAction } from "../../../src/action/CoreAction";
-import { PersonalCalendarLocator } from "./locator";
-import { afterEach } from "node:test";
+import { PersonalCalendarLocator } from "./locator"; 
 
 export class PersonalCalendarAction extends CoreAction {
 
@@ -114,6 +113,10 @@ export class PersonalCalendarAction extends CoreAction {
 
     async clickRequestShiftTradeButton() {
         await this.locator.requestShiftTradeButton.click();
+    }
+
+    async clickGoBackToCalendarButton() {
+        await this.locator.backToCalendar.click();
     }
 
 }
