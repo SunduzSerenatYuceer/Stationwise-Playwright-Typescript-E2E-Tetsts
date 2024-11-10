@@ -12,7 +12,9 @@ export class DashboardAction extends CoreAction {
     }
 
     async goToPersonalCalendarTopBar() {
-        await this.locator.personalCalendar_topBar.click();
+        await this.page.waitForTimeout(3000);
+        await this.locator.personalCalendar_topBar.waitFor({state : "visible"});
+        await this.locator.personalCalendar_topBar.click({force : true});
     }
 
     async goToPersonalCalendarLeftBar() {
@@ -34,6 +36,14 @@ export class DashboardAction extends CoreAction {
 
     async goToPayrollAdmin() {
         await this.locator.payroll_admin.click();
+    }
+        
+    async clickProfileButton() {
+        await this.locator.profilButton.click();
+    }
+
+    async clickSignoutButton() {
+        await this.locator.signoutButton.click();
     }
 
 }

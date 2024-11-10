@@ -11,4 +11,5 @@ export class DashboardAssertion extends CoreAssertion {
         this.locator = new DashboardLocator(page, testInfo);
     }
 
+
 }
