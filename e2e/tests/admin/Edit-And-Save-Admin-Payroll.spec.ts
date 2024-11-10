@@ -3,7 +3,7 @@ import { test } from "../../pages/fixtures";
 import { PrefencesAction } from "../../pages/prefences-page/action";
 
 
-test.describe.parallel(`Personal Calendar For Admin User`, () => {
+test.describe.parallel(`Payroll For Admin User`, () => {
 
 
     test.beforeEach(async ({ loginPage, dashboardPage }) => {
@@ -32,23 +32,17 @@ test.describe.parallel(`Personal Calendar For Admin User`, () => {
         await payrollPage.action.clickCancelButton();
     });
 
-    test(`Edit and Save Message Notifications for ${role} User`, async({ prefencesPage }, testInfo) => {
-        await prefencesPage.action.clickMessageNotificationButton();
-        await prefencesPage.action.checkMailRadioButton();
-        await prefencesPage.action.saveNotification();
-        await prefencesPage.action.clickMessageNotificationButton();
-        await prefencesPage.action.uncheckMailRadioButton();
-        await prefencesPage.action.saveNotification();
-    });
-
-    test(`Edit and Save Requests for ${role} User`, async({ prefencesPage }, testInfo) => {
-        await prefencesPage.action.clickRequestNotificationButton();
-        await prefencesPage.action.checkSMSRequestRadioButton();
-        await prefencesPage.action.saveNotification();
-        await prefencesPage.action.clickRequestNotificationButton();
-        await prefencesPage.action.uncheckSMSRequestRadioButton();
-        await prefencesPage.action.saveNotification();
-        await prefencesPage.assertion.issuccessMessageRequestsVisible();
+    test(`Filter Payroll Table`, async({ payrollPage }, testInfo) => {
+        await payrollPage.action.clickRankFilter();
+        await payrollPage.action.clickApparatusOp();
+        await payrollPage.action.clickShiftFilter();
+        await payrollPage.action.clickFShift();
+        await payrollPage.action.clickEmployeeSignedFilter();
+        await payrollPage.action.clickEmployeeSigned();
+        await payrollPage.action.clickAppr1Filter();
+        await payrollPage.action.clickAppr1NotOption();
+        await payrollPage.action.clickAppr2Filter();
+        await payrollPage.action.clickAppr2NotOption();
     });
 
   }); 
