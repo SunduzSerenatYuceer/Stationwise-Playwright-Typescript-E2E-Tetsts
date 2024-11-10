@@ -3,6 +3,7 @@ import { CoreAssertion } from "../../../src/assertion/CoreAssertion";
 import { LoginLocator } from "./locator";
 
 export class LoginAssertion extends CoreAssertion {
+  
   public locator: LoginLocator;
 
   constructor(page: Page, testInfo: TestInfo) {

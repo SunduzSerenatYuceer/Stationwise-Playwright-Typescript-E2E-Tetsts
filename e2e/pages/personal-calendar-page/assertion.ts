@@ -11,11 +11,11 @@ export class PersonalCalendarAssertion extends CoreAssertion {
   }
 
   async isSuccessRequestMessageVisible() {
-    expect(this.locator.SuccessRequestMessage).toBeVisible;
+    expect(this.locator.SuccessRequestMessage).toBeVisible();
   }
 
   async isSuccessShiftTradeMessageVisible() {
-    expect(this.locator.successShiftTradeMessage).toBeVisible;
+    expect(this.locator.successShiftTradeMessage).toBeVisible();
   }
 
 

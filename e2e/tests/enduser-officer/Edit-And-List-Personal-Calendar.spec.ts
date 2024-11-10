@@ -1,6 +1,5 @@
 import testOptions from "../../../src/config/TestOptions";
 import { test } from "../../pages/fixtures";
-import { LoginPage } from "../../pages/login-page/page";
 
 const roles = ['enduser', 'officer'];
 
