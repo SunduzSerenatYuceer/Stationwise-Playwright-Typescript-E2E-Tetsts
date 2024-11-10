@@ -15,7 +15,6 @@ export class DashboardLocator extends CoreLocator {
     private _prefences_admin = this.page.getByRole('button', { name: 'Preferences' });
     private _payroll_admin = this.page.getByLabel('Payroll');
 
-    
     public get personalCalendar_topBar() {
         return this._personalCalendar_topBar;
     }

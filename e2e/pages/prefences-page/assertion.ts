@@ -12,11 +12,11 @@ export class PrefencesAssertion extends CoreAssertion {
     }
 
     async isSavedNumberVisible() {
-        expect(this.locator.savedPhoneNumber).toBeVisible;
+        expect(this.locator.savedPhoneNumber).toBeVisible();
     }
 
     async issuccessMessageRequestsVisible() {
-        expect(this.locator.successMessageRequests).toBeVisible;
+        expect(this.locator.successMessageRequests).toBeVisible();
     }
 
 

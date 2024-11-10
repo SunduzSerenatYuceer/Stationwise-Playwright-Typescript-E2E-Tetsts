@@ -4,6 +4,7 @@ import { LoginAction } from "./action";
 import { LoginAssertion } from "./assertion";
 
 export class LoginPage extends CorePage {
+  
   public action: LoginAction;
   public assertion: LoginAssertion;
 

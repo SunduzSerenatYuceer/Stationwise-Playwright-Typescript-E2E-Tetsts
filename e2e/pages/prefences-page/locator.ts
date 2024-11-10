@@ -23,10 +23,6 @@ export class PrefencesLocator extends CoreLocator {
         return this._phoneNumberTextField;
     }
 
-    public set phoneNumberTextField(phoneNumberTextField) {
-        this._phoneNumberTextField = phoneNumberTextField;
-    }
-
     public get savePhoneNumber() {
         return this._savePhoneNumber;
     }

@@ -1,6 +1,6 @@
 import { Page as BasePage, TestInfo } from "@playwright/test";
 import  { CorePage } from "../../../src/page/CorePage";
-import { PrefencesAction } from "./action";
+import { PrefencesAction } from "./action"; 
 import { PrefencesAssertion } from "./assertion";
 
 export class PrefencesPage extends CorePage {
