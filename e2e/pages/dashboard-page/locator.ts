@@ -6,6 +6,8 @@ export class DashboardLocator extends CoreLocator {
     private _personalCalendar_topBar = this.page.getByLabel('Personal Calendar').nth(1);
     private _personalCalendar_leftBar = this.page.getByLabel('Personal Calendar').first();
     private _prefences_leftBar = this.page.getByLabel('Preferences');
+    private _profilButton = this.page.getByRole('button', { name: 'A', exact: true });
+    private _signoutButton = this.page.getByRole('button', { name: 'Sign out' });
 
     //Admin Role Locators
     private _more_leftBar = this.page.getByLabel('More');
@@ -40,6 +42,15 @@ export class DashboardLocator extends CoreLocator {
 
     public get payroll_admin() {
         return this._payroll_admin;
+    }
+
+    
+    public get profilButton() {
+        return this._profilButton;
+    }
+
+    public get signoutButton() {
+        return this._signoutButton;
     }
 
 

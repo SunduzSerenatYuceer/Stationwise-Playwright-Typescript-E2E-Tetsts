@@ -5,15 +5,15 @@ import { DashboardAssertion } from "./assertion";
 
 export class DashboardPage extends CorePage {
 
-    private action : DashboardAction;
-    private assertion : DashboardAssertion;
+    public action : DashboardAction;
+    public assertion : DashboardAssertion;
 
     constructor(page : BasePage, testInfo: TestInfo) {
 
         super(page, testInfo);
         this.action = new DashboardAction(page, testInfo);
         this.assertion = new DashboardAssertion(page, testInfo);
-        
+
     }
 
 }

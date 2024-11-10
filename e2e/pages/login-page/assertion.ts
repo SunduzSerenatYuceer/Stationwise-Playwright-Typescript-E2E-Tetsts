@@ -10,6 +10,7 @@ export class LoginAssertion extends CoreAssertion {
     this.locator = new LoginLocator(page, testInfo);
   }
 
+  
   async isDashboardTextVisible(expected: string) {
     await expect(this.locator.dashBoardText).toContainText(expected);
   }

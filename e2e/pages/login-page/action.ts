@@ -14,7 +14,7 @@ export class LoginAction extends CoreAction{
 
     async goToLoginPage() {
         await this.page.goto(`${testOptions.webURL}`, {
-          waitUntil: "networkidle",
+          waitUntil: "load",
         });
     }
 
