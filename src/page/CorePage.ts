@@ -1,9 +1,7 @@
-import { Page, TestInfo } from "@playwright/test";
-import type { IAssertion } from "./IAssertion";
-import test from "node:test";
+import { Page, TestInfo} from "@playwright/test";
+import { IPage } from "./IPage"; 
 
-
-export class BaseAssertion implements IAssertion {
+export class CorePage implements IPage {
 
     private _page : Page;
     private _testInfo : TestInfo;
@@ -28,5 +26,4 @@ export class BaseAssertion implements IAssertion {
     public set testInfo(testInfo : TestInfo) {
         this._testInfo = testInfo;
     }
-
 }
