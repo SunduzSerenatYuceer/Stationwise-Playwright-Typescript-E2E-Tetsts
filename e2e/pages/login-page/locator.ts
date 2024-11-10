@@ -32,10 +32,6 @@ export class LoginLocator extends CoreLocator {
         return this._loginButton;
     }
 
-    public set loginButton(loginButton) {
-        this._loginButton = loginButton;
-    }
-
     public get dashBoardText() {
         return this._dashboardText;
     }
