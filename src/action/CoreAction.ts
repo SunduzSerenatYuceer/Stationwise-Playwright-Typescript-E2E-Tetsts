@@ -1,12 +1,12 @@
-import { Page, TestInfo} from "@playwright/test";
-import { ILocator } from "./ILocater";
+import { Page, TestInfo } from "@playwright/test";
+import type { IAction } from "./IAction";
 
-export class BaseLocator implements ILocator {
+export class CoreAction implements IAction {
 
     private _page : Page;
     private _testInfo : TestInfo;
 
-    constructor(page : Page, testInfo : TestInfo) {
+    constructor(page: Page, testInfo: TestInfo) {
         this._page = page;
         this._testInfo = testInfo;
     }
@@ -26,5 +26,6 @@ export class BaseLocator implements ILocator {
     public set testInfo(testInfo : TestInfo) {
         this._testInfo = testInfo;
     }
+    
 
 }

@@ -1,12 +1,14 @@
 import { Page, TestInfo } from "@playwright/test";
-import type { IAction } from "./IAction";
+import type { IAssertion } from "./IAssertion";
+import test from "node:test";
 
-export class BaseAction implements IAction {
+
+export class CoreAssertion implements IAssertion {
 
     private _page : Page;
     private _testInfo : TestInfo;
 
-    constructor(page: Page, testInfo: TestInfo) {
+    constructor(page : Page, testInfo : TestInfo) {
         this._page = page;
         this._testInfo = testInfo;
     }
@@ -26,6 +28,5 @@ export class BaseAction implements IAction {
     public set testInfo(testInfo : TestInfo) {
         this._testInfo = testInfo;
     }
-    
 
 }
